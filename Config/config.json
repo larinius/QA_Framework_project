@@ -1,0 +1,24 @@
+{
+  "Config": {
+    "Driver": "Chrome",
+    "Drivers": "Chrome, Firefox",
+    "Timeout": "10"
+  },
+  "BrowserOptions": {
+    "Lang": "--lang=en",
+    "Incognito": "--incognito",
+    "Window": "--start-maximized",
+    "SSL_Errors": "--ignore-certificate-errors",
+    "AllowPopups": "--disable-popup-blocking",
+    "DisablePuggins": "--disable-extensions"
+  },
+
+  "NLog": {
+    "Path": "Logs",
+    "Layout": "${date:format=yyyy-MM-dd.HH.mm.ss} ${level}: ${message}"
+  },
+
+  "Page": {
+    "Url": "https://demoqa.com/"
+  }
+}
